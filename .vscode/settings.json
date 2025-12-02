@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.referencedLibraries": [
+        "D:/perkuliahan2025/Java_visual/4/javafx-sdk-21.0.9/lib/**/*.jar"
+    ]
+}
