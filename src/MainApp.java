@@ -13,18 +13,18 @@ public class MainApp extends Application {
         Character steve = new Character("Steve", 100, 1);
 
         // Label = papan nama di depan rumah
-        Label nameLabel = new Label("Welcome, " + steve.getName() + "!");
+        Label nameLabel = new Label("⛏ " + steve.getName() + " [Level " + steve.getLevel() + "]");
         nameLabel.setStyle("-fx-font-size: 24; -fx-text-fill: lime; -fx-font-weight: bold;");
 
         // StackPane = tumpukan block, tengah-tengah
         StackPane root = new StackPane(nameLabel);
-        root.setStyle("-fx-background-color: #87CEEB;"); // Langit Minecraft
+        root.setStyle("-fx-background-color: #7D26CD;"); // Nether purple
 
         // Scene = chunk ukuran 400x300
         Scene scene = new Scene(root, 400, 300);
 
         // Stage = jendela utama
-        primaryStage.setTitle("Minecraft Character Manager");
+       primaryStage.setTitle("[Level " + steve.getLevel() + "] Character Manager");
         primaryStage.setScene(scene);
         primaryStage.show(); // Buka pintu!
     }
